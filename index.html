@@ -2,135 +2,137 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">    <link href="css/styles.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header><!-- header -->
-        <h2>The code Review</h2>
+        <h1>The code review</h1>
     </header><!-- closes header -->
 
     <form action="index.html" method="post"><!-- form -->
-        <h1>Signup for our newsletter</h1>
-        <p>Get the latest news on how your code is doing right in your inbox</p>
+        <h2 class="intro title">Signup for our newsletter</h2>
+        <p class="intro">Get the latest news on how your code is doing right in your inbox</p>
+        <hr class="double"><!-- first HR in the intro Thick, Thin line -->
         <fieldset>
             <legend>Contact Information</legend><!-- Section Title -->
 
             <label for="name">Full Name</label><!-- Full Name Input -->
-            <input type="text" id="name" name="user_name">
+            <input type="text" id="name" name="user_name" placeholder="Required" required>
 
             <label for="mail">Email Address</label><!-- Email Input -->
-            <input type="email" id="mail" name="user_email">
+            <input type="email" id="mail" name="user_email" placeholder="Required" required>
 
-            <label for="phone">Phone</label><!-- Phone Input -->
-            <input type="phone" id="phone" name="user_phone">
+            <label for="tel">Phone Number</label><!-- Phone Number Input -->
+            <input type="tel" id="tel" name="user_tel">
 
             <label for="address">Street Address</label><!-- Street Address Input -->
-            <input type="address" id="address" name="user_address">
+            <input type="text" id="address" name="user_address" placeholder="Required" required>
 
             <label for="city">City</label><!-- City Input -->
-            <input type="city" id="city" name="user_city">
+            <input type="text" id="city" name="user_city" placeholder="Required" required>
 
-            <label for="state">State</label><!-- State Input -->
+            <label for="state">State</label><!-- State Label -->
             <select id="state" name="user_state">
+                <option value="0">Choose State</option>
                 <optgroup label="West"><!-- State Region West -->
-                    <option value="alaska">Alaska</option>
-                    <option value="california">California</option>
-                    <option value="colorado">Colorado</option>
-                    <option value="hawaii">Hawaii</option>
-                    <option value="idaho">Idaho</option>
-                    <option value="montana">Montana</option>
-                    <option value="nevada">Nevada</option>
-                    <option value="oregon">Oregon</option>
-                    <option value="utah">Utah</option>
-                    <option value="washington">Washington</option>
-                    <option value="wyoming">Wyoming</option>
+                    <option value="1">Alaska</option>
+                    <option value="2">California</option>
+                    <option value="3">Colorado</option>
+                    <option value="4">Hawaii</option>
+                    <option value="5">Idaho</option>
+                    <option value="6">Montana</option>
+                    <option value="7">Nevada</option>
+                    <option value="8">Oregon</option>
+                    <option value="9">Utah</option>
+                    <option value="10">Washington</option>
+                    <option value="11">Wyoming</option>
                 </optgroup><!-- Closes State Region West -->
                 <optgroup label="Southwest"><!-- State Region SouthWest -->
-                    <option value="arizona">Arizona</option>
-                    <option value="new_mexico">New Mexico</option>
-                    <option value="oklahoma">Oklahoma</option>
-                    <option value="texas">Texas</option>
+                    <option value="12">Arizona</option>
+                    <option value="13">New Mexico</option>
+                    <option value="14">Oklahoma</option>
+                    <option value="15">Texas</option>
                 </optgroup><!-- Closes State Region SouthWest -->
                 <optgroup label="Mid-West"><!-- State Region Mid-West -->
-                    <option value="illinois">Illinois</option>
-                    <option value="indiana">Indiana</option>
-                    <option value="iowa">Iowa</option>
-                    <option value="kansas">Kansas</option>
-                    <option value="michigan">Michigan</option>
-                    <option value="minnesota">Minnesota</option>
-                    <option value="nebraska">Nebraska</option>
-                    <option value="north_dakota">North Dakota</option>
-                    <option value="ohio">Ohio</option>
-                    <option value="south_dakota">South Dakota</option>
-                    <option value="wisconsin">Wisconsin</option>
+                    <option value="16">Illinois</option>
+                    <option value="17">Indiana</option>
+                    <option value="18">Iowa</option>
+                    <option value="19">Kansas</option>
+                    <option value="20">Michigan</option>
+                    <option value="21">Minnesota</option>
+                    <option value="22">Nebraska</option>
+                    <option value="23">North Dakota</option>
+                    <option value="24">Ohio</option>
+                    <option value="25">South Dakota</option>
+                    <option value="26">Wisconsin</option>
                 </optgroup><!-- Closes State Region Mid-West -->
                 <optgroup label="South"><!-- State Region South -->
-                    <option value="alabama">Alabama</option>
-                    <option value="arkansas">Arkansas</option>
-                    <option value="florida">Florida</option>
-                    <option value="georgia">Georgia</option>
-                    <option value="kentucky">Kentucky</option>
-                    <option value="louisiana">Louisiana</option>
-                    <option value="mississippi">Mississippi</option>
-                    <option value="missouri">Missouri</option>
-                    <option value="north_carolina">North Carolina</option>
-                    <option value="south Carolina">South Carolina</option>
-                    <option value="tennessee">Tennessee</option>
-                    <option value="virginia">Virginia</option>
-                    <option value="west_virginia">West Virginia</option>
+                    <option value="27">Alabama</option>
+                    <option value="28">Arkansas</option>
+                    <option value="29">Florida</option>
+                    <option value="30">Georgia</option>
+                    <option value="31">Kentucky</option>
+                    <option value="32">Louisiana</option>
+                    <option value="33">Mississippi</option>
+                    <option value="34">Missouri</option>
+                    <option value="35">North Carolina</option>
+                    <option value="36">South Carolina</option>
+                    <option value="37">Tennessee</option>
+                    <option value="38">Virginia</option>
+                    <option value="39">West Virginia</option>
                 </optgroup><!-- Closes State Region South-->
                 <optgroup label="Middle Atlantic"><!-- State Region Middle Atlantic -->
-                    <option value="delaware">Delaware</option>
-                    <option value="maryland">Maryland</option>
-                    <option value="new_jersey">New Jersey</option>
-                    <option value="new_york">New York</option>
-                    <option value="pennsylvania">Pennsylvania</option>
+                    <option value="40">Delaware</option>
+                    <option value="41">Maryland</option>
+                    <option value="42">New Jersey</option>
+                    <option value="43">New York</option>
+                    <option value="44">Pennsylvania</option>
                 </optgroup><!-- Closes State Region Middle Atlantic -->
                 <optgroup label="New England"><!-- State Region New England -->
-                    <option value="connecticut">Connecticut</option>
-                    <option value="maine">Maine</option>
-                    <option value="massachusetts">Massachusetts</option>
-                    <option value="new_hampshire">New Hampshire</option>
-                    <option value="rhode_island">Rhode Island</option>
-                    <option value="Vermont">Vermont</option>
+                    <option value="45">Connecticut</option>
+                    <option value="46">Maine</option>
+                    <option value="47">Massachusetts</option>
+                    <option value="48">New Hampshire</option>
+                    <option value="49">Rhode Island</option>
+                    <option value="50">Vermont</option>
                 </optgroup><!-- Closes State Region New England -->
             </select>
 
             <label for="zip">Zip Code</label><!-- Zip Code Input -->
-            <input type="zip" id="zip" name="user_zip">
+            <input type="text" id="zip" name="user_zip" class="zip" placeholder="Required" required>
         </fieldset>
+        <hr><!-- second hr thin solid -->
         <fieldset>
             <legend>Newsletter</legend>
-            <p>Select the newsletters you would like to receive</p>
+            <p class="newsletter">Select the newsletters you would like to receive</p>
 
             <input type="checkbox" id="html" value="newsletter_html" name="user_newsletter">
-            <label for="html">HTML News</label><br><!-- HTML News Checkbox -->
+            <label class="light" for="html">HTML News</label><br><!-- HTML News Checkbox -->
 
             <input type="checkbox" id="css" value="newsletter_css" name="user_newsletter">
-            <label for="css">CSS News</label><br><!-- CSS News Checkbox -->
+            <label class="light" for="css">CSS News</label><br><!-- CSS News Checkbox -->
 
             <input type="checkbox" id="javascript" value="newsletter_javascript" name="user_newsletter">
-            <label for="javascript">Javascript News</label><!-- Javascript News Checkbox -->
+            <label class="light" for="javascript">Javascript News</label><!-- Javascript News Checkbox -->
 
-            <p>Newsletter format</p>
+            <p class="newsletter">Newsletter format</p>
 
             <input type="radio" id="htmlr" value="newsletter_format_htmlr" name="user_newsletter_format">
-            <label for="htmlr">HTML</label><br><!-- HTML Radio -->
+            <label class="light" for="htmlr">HTML</label><br><!-- HTML Radio -->
 
             <input type="radio" id="plain_text" value="newsletter_plain_text" name="user_newsletter_format">
-            <label for="plain_text">Plain text</label><!-- Plain text Radio -->
+            <label class="light" for="plain_text">Plain text</label><!-- Plain Text Radio -->
 
-            <label for="bio">Other topics you'd like to hear about:</label>
-            <textarea id="other_topics" name="user_topics"></textarea>
+            <label for="other-topics" class="bio" >Other topics you'd like to hear about:</label>
+            <textarea id="other-topics" name="user_topics" placeholder="Start Typing Here"></textarea>
         </fieldset>
         <button type="submit">Sign Up</button><!-- Submit Button -->
     </form><!-- closes form -->
-
     <footer>
-        <p>Copyright The Code Review</p>
+        <p><i>&copy; The Code Review</i></p>
     </footer>
 </body>
 </html>
